@@ -10,19 +10,7 @@ if (typeof module !== "undefined" && typeof exports !== "undefined" && module.ex
   module.exports = 'ui.router';
 }
 
-(function (window, angular, undefined) {
-/*jshint globalstrict:true*/
-/*global angular:false*/
-'use strict';
 
-var isDefined = angular.isDefined,
-    isFunction = angular.isFunction,
-    isString = angular.isString,
-    isObject = angular.isObject,
-    isArray = angular.isArray,
-    forEach = angular.forEach,
-    extend = angular.extend,
-    copy = angular.copy;
 
 function inherit(parent, extra) {
   return extend(new (extend(function() {}, { prototype: parent }))(), extra);
